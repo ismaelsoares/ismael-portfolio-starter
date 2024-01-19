@@ -49,8 +49,13 @@ export const Nav = () => {
           >
             {/* tooltip */}
             <div className='absolute right-0 hidden pr-14 xl:group-hover:flex'>
-              <div className='relative flex items-center bg-white text-primary p-[6px]'>
-                <div className='text-[12px]'>{link.name}</div>
+              <div className='relative flex items-center bg-white text-primary p-[6px] rounded-[3px]'>
+                <div className='text-[12px] leading-none font-semibold capitalize'>{
+                  link.name}
+                </div>
+                {/* {triangle} */}
+                <div className='border-solid border-l-white border-l-8 border-y-transparent 
+                border-y-[6px] border-r-0 absolute -right-2'></div>
               </div>
             </div>
             {/* icon */}
