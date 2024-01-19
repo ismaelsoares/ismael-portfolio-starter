@@ -1,3 +1,8 @@
+//next Link
+import Link from 'next/link';
+//next Router
+import { useRouter } from 'next/router';
+
 // icons
 import {
   HiHome,
@@ -27,5 +32,15 @@ export const navData = [
 ];
 
 export const Nav = () => {
-  return <nav>nav</nav>;
+  return (
+    <nav>
+      {/* {inner} */}
+      <div>
+        {navData.map((link, index) => {
+          return <Link key={index} href={link.path}>{link.icon}</Link>
+        })}
+      </div>
+    </nav>
+
+  );
 };
