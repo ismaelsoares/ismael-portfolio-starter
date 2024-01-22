@@ -12,7 +12,6 @@ const sora = Sora({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800']
 })
 
-
 //components
 export const Layout = ({ children }) => {
   return (
